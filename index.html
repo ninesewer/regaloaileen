@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Mi Amor! - 17 Años</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="heart-container"></div>
+    
+    <!-- Lightbox para zoom de fotos -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    
+    <!-- Música de fondo -->
+    <div class="music-player">
+        <audio id="bg-music" loop>
+            <source src="music/audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <button id="music-toggle" class="music-btn">
+            <span class="icon">🎵</span>
+            <span class="text">Reproducir Música</span>
+        </button>
+    </div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="animate-title">¡Felices 17, Princesa!</h1>
+            <p class="hero-subtitle">09 de Abril 2009 - Un día tan especial como tú.</p>
+            <div class="scroll-indicator" id="scroll-to-content">
+                <span>Desliza para ver nuestras memorias</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="tiempo-juntos" class="section timer-section">
+        <h2 class="section-title">Nuestro Tiempo Juntos</h2>
+        <p class="section-subtitle">Cada segundo a tu lado cuenta...</p>
+        <div id="timer" class="timer-container">
+            <div class="timer-item">
+                <span id="days" class="timer-number">0</span>
+                <span class="timer-label">Días</span>
+            </div>
+            <div class="timer-item">
+                <span id="hours" class="timer-number">0</span>
+                <span class="timer-label">Horas</span>
+            </div>
+            <div class="timer-item">
+                <span id="minutes" class="timer-number">0</span>
+                <span class="timer-label">Minutos</span>
+            </div>
+            <div class="timer-item">
+                <span id="seconds" class="timer-number">0</span>
+                <span class="timer-label">Segundos</span>
+            </div>
+        </div>
+        <p class="timer-footer">Desde el 24 de febrero de 2026 ❤️</p>
+    </section>
+
+    <main>
+        <section id="mensajes" class="section">
+            <h2 class="section-title">Recordatorios para Ti</h2>
+            <div class="messages-container">
+                <!-- Mensaje Principal de Leo -->
+                <div class="message-card main-love-message">
+                    <div class="message-header">
+                        <span class="heart-tag">De tu amor, Leo ❤️</span>
+                    </div>
+                    <p class="leo-text">"feliz cumpleaños Aileen, no puedo agradecer lo suficiente la manera que me haces sentir a pesar de todo lo que pasa a mi alrededor, hay una luz brillante alli, aveces siguiendome, otras veces guiandome, bueno, mi luz eres tu, estas distante ahora mismo, como una estrella, pero algun dia lograre llegar hasta ti, como en cualquier cuento de hadas o cualquier historia con un final feliz, sera asi, gracias por haber existido y tener la fuerza de cumplir un nuevo año mas existiendo, tu comprension y siempre estando atenta de que yo este bien o alegre o siempre mimandome, o dandome todo ese afecto, una confianza y un apoyo inmenso, es lo que necesito, para que yo siga con vida, felices 17 mi amor, mereces una vida llena de mucha mucha felicidad y quiero darte ese proposito, pues mi principal proposito, me lo diste tu, existir para ti, te envio mis mejores deseos, y se que estaras mas alegre cuando tengas 17 años!!! animo, te amooo demasiadooo, te amo infinitamente y eso solo aumentara aun y aun mas, sin terminar, ten un lindo cumpleaños, yo estoy aqui para ti y siempre lo estare, mis mejores deseos, leo. muaki."</p>
+                </div>
+
+                <!-- Mensaje Especial de Nao -->
+                <div class="message-card special-message">
+                    <div class="message-header">
+                        <span class="friend-tag">Mensaje de una amiga ✨</span>
+                    </div>
+                    <p class="nao-text">"happyyy birthdayyy lyn i hope your day is full of smiles, soft moments, and everything that makes you happy you deserve all the lovee and good energy today and always stay as sweet and pretty as you are and keep shining the way you do hope this year brings you so many cute memories, laughs, and little happy surprises enjoy your special dayy"</p>
+                    <div class="message-footer">
+                        <p class="signature-nao">Wishes - Sovee / Nao</p>
+                    </div>
+                </div>
+
+                <div class="message-card">
+                    <p>"Eres más fuerte de lo que crees y más valiosa de lo que imaginas."</p>
+                </div>
+                <div class="message-card">
+                    <p>"Tu sonrisa es mi parte favorita del día."</p>
+                </div>
+                <div class="message-card">
+                    <p>"Gracias por estos 17 años de ser tú misma, el mundo es mejor contigo."</p>
+                </div>
+                <div class="message-card">
+                    <p>"Eres el regalo más bonito que la vida me ha dado."</p>
+                </div>
+                <div class="message-card">
+                    <p>"Cada día a tu lado es una nueva aventura que no cambiaría por nada."</p>
+                </div>
+                <div class="message-card">
+                    <p>"Te admiro por tu valentía, tu inteligencia y tu gran corazón."</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section">
+            <h2 class="section-title">Nuestros Momentos</h2>
+            <p class="section-subtitle">Un recorrido por nuestras fotos favoritas</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/F3E4D2yaYAAK7tc.jpg" alt="Recuerdo 1"></div>
+                <div class="gallery-item"><img src="images/F9ikAG3aEAAxxrE.jpg" alt="Recuerdo 2"></div>
+                <div class="gallery-item"><img src="images/FfwTsHxakAAI6D1.jpg" alt="Recuerdo 3"></div>
+                <div class="gallery-item"><img src="images/G2T02b1bQAAGvcw.jpg" alt="Recuerdo 4"></div>
+                <div class="gallery-item"><img src="images/G2bunHtbwAAlT8V.jpg" alt="Recuerdo 5"></div>
+                <div class="gallery-item"><img src="images/GNI959BaEAI4Kb3.jpg" alt="Recuerdo 6"></div>
+                <div class="gallery-item"><img src="images/GcEze3ybsAA_oO3.jpg" alt="Recuerdo 7"></div>
+                <div class="gallery-item"><img src="images/Gc_e0dubEAAoxP0.jpg" alt="Recuerdo 8"></div>
+                <div class="gallery-item"><img src="images/GmzUh-vaIAAw_gl.jpg" alt="Recuerdo 9"></div>
+            </div>
+        </section>
+
+        <section id="juntos" class="section juntos-section">
+            <h2 class="section-title text-white">Nosotros Juntos Algun dia</h2>
+            <p class="section-subtitle text-white">Cada momento a tu lado es un tesoro</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/GsW4K33boAAAVxl.jpg" alt="Juntos 1"></div>
+                <div class="gallery-item"><img src="images/GxCxt0XbUAIu98x.jpg" alt="Juntos 2"></div>
+                <div class="gallery-item"><img src="images/Gxxc0ODa0AAqA8S.jpg" alt="Juntos 3"></div>
+                <div class="gallery-item"><img src="images/GzSDdsjbsAAgCeQ.jpg" alt="Juntos 4"></div>
+                <div class="gallery-item"><img src="images/HEgHSnMaMAA5qFS.jpg" alt="Juntos 5"></div>
+                <div class="gallery-item"><img src="images/HEy2zgnbAAAQ-Ba.jpg" alt="Juntos 6"></div>
+            </div>
+        </section>
+
+        <section id="mas-recuerdos" class="section">
+            <h2 class="section-title">Más Recuerdos Especiales</h2>
+            <p class="section-subtitle">Fotos adicionales que guardo con mucho cariño</p>
+            <div class="gallery-grid">
+                <!-- Aquí aparecerán las fotos que añadas a la carpeta images/recuerdos_extra/ -->
+                <div class="gallery-item"><img src="images/recuerdos_extra/182fda32073e5a22.png" alt="Recuerdo Extra 1"></div>
+                <div class="gallery-item"><img src="images/recuerdos_extra/2026024.jpg" alt="Recuerdo Extra 2"></div>
+                <div class="gallery-item"><img src="images/recuerdos_extra/222333.jpg" alt="Recuerdo Extra 3"></div>
+                <div class="gallery-item"><img src="images/recuerdos_extra/7fnu9LPLagAAAAASUVORK5CYII.png" alt="Recuerdo Extra 4"></div>
+                <div class="gallery-item"><img src="images/recuerdos_extra/Captura_de_pantalla_2025-03-23_212741.png" alt="Recuerdo Extra 5"></div>
+                <div class="gallery-item"><img src="images/recuerdos_extra/image.jpg" alt="Recuerdo Extra 6"></div>
+            </div>
+        </section>
+
+        <section id="videos" class="section bg-light">
+            <h2 class="section-title">Pequeños Clips</h2>
+            <div class="video-container">
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/ryotti168168-2041440087297466505[twitter].mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video controls>
+                        <source src="videos/takatisakana-2039701531071770760[twitter].mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+        <section id="memorias-inolvidables" class="section">
+            <h2 class="section-title">Solo tu y yo</h2>
+            <p class="section-subtitle">xexexe, seamos grr</p>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/memorias_inolvidables/G-9Px7PW4AAGQh4.jpg" alt="Memoria 1"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/GcXq2sZW8AAU1kD.jpg" alt="Memoria 2"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/Gfp_o_wWYAA1414.jpg" alt="Memoria 3"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/HFJNR1PaMAAJWAl.jpg" alt="Memoria 4"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/HFOR2VXbkAAhVtk.jpg" alt="Memoria 5"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/HFSh3qebAAATY8b.jpg" alt="Memoria 6"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/HFYKkbKbkAAYOZQ.jpg" alt="Memoria 7"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/HFaj9iCXwAAxU0b.jpg" alt="Memoria 8"></div>
+                <div class="gallery-item"><img src="images/memorias_inolvidables/descarga - 2025-01-01T115506.283.jpg" alt="Memoria 9"></div>
+            </div>
+        </section>
+
+        <section id="carta" class="section">
+            <div class="love-letter">
+                <h2 class="dancing-font">Para la cumpleañera más especial...</h2>
+                <p>Animo amor, ya pronto todo estara bien, siempre se tu y me alegro que ya tengas 17!!! cuando te caigas yo estare alli para levantarte! y animarte a que lo intentes de nuevo, no te rindas, llegaremos a una meta mas lejos que cualquier otro humano alla conocido!</p> 
+                <p class="signature">Con todo mi amor, [Leo (Ixy)]</p>
+            </div>
+        </section>
+
+        <section id="regalo-especial" class="section regalo-section">
+            <h2 class="section-title text-white">Tu Regalo Especial</h2>
+            <div class="regalo-container">
+                <a href="https://www.falabella.com.co/falabella-co/product/73475665/portatil-gamer-lenovo-loq-geforce-rtx-3050-intel-core-i5-serie-hx-8gb-de-ram-512gb-ssd-de-almacenamiento-windows-11-pantalla-15-6-pulgadas-loq-computador-portatil/73475665?kid=shopp261fa&gad_campaignid=21861273110" target="_blank" class="regalo-link">
+                    <div class="regalo-image">
+                        <img src="images/222/22344.png" alt="Tu Regalo">
+                        <div class="overlay-link">
+                            <span>Haz clic para ver tu regalo 🎁</span>
+                        </div>
+                    </div>
+                </a>
+                <div class="regalo-descripcion">
+                    <p class="text-white">"Porque te mereces lo mejor del mundo, este sera tu regalo mañana muy probablemente! imagina que te lo regale yo, bueno en el futuro te regalare muchas laptops! y podremos jugar juntos y ver anime en la cama! se que si! ya no tendras frio con esta laptop amor :3 detalle pensado con todo mi amor"</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con ❤️ para el amor de mi vida</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
